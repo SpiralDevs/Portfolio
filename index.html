@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <link rel="icon" type="image/x-icon" href="spiral.ico?">
     <meta charset="UTF-8" />
@@ -11,23 +10,34 @@
     <meta content="SpiralDevs" property="og:title" />
     <meta content="Portfolio of SpiralDevs" property="og:description" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/sidebar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/header.css">
     <link rel="stylesheet" href="CSS/index.css">
     <link rel="stylesheet" href="CSS/portfolio.css">
 </head>
-
 <body>
-
-    <header>
-        <nav>
-            <ul class="nav_links">
-                <li><a href="https://spiraldevs.xyz/"><img src="Images/svg/home.svg" height="24px" width="24px" style="position: relative; top:4px;"> Home</a></li>
-                <li><a href="https://portfolio.spiraldevs.xyz/"><img src="Images/svg/portfolio.svg" height="24px" width="24px" style="position: relative; top:4px;"> Portfolio</a></li>
-                <li><a href="https://devlogs.spiraldevs.xyz/"><img src="Images/svg/devlog.svg" height="24px" width="24px" style="position: relative; top:4px;"> Devlogs</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="top-bar">
+        <div class="home-icon">
+            <a href="https://spiraldevs.xyz/">
+                <img src="Images/svg/home.svg" alt="Home">
+            </a>
+        </div>
+        <header>
+            <nav>
+                <div class="nav-container">
+                    <ul class="nav_links">
+                        <li><a href="https://portfolio.spiraldevs.xyz/" class="nav-item">Portfolio<span class="active-dot" id="portfolio-dot"></span></a></li>
+                        <li><a href="https://devlogs.spiraldevs.xyz/" class="nav-item">Devlogs<span class="active-dot" id="devlogs-dot"></span></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="github-link">
+            <a href="https://github.com/SpiralDevs">
+                <img src="Images/svg/github.svg" width="32" height="32" alt="GitHub">
+            </a>
+        </div>
+    </div>
 
     <section id="portfolio-text" class="container">
         <h1>Portfolio</h1>
@@ -35,7 +45,7 @@
 
     <section id="portfolio" class="container">
         <div class="project">
-            <img src="Images/png/igmm.png" alt="IGMM Icon">
+            <img src="Images/png/igmm.png" alt="Isle Goblin Mod Maker Icon">
             <div class="project-content">
                 <h2>Isle Goblin Mod Maker (IGMM)</h2>
                 <p>Open-source Python Software to make mods for Isle Goblin.</p>
@@ -64,6 +74,12 @@
             </div>
         </div>
     </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 SpiralDevs. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script type="text/javascript" src="JS/index.js"></script>
     <script type="text/javascript" src="JS/explosion.js"></script>
